@@ -1,5 +1,6 @@
 name: print-name
-on: [push]
+on: 
+  push:
 
 jobs:
   print:
@@ -9,5 +10,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Print Name
-        run: echo "GitHub Actions Workflow: print-name is running successfully!"
+        run: |
+          echo "GitHub Actions Workflow: print-name is running successfully!"
 
