@@ -1,0 +1,13 @@
+name: print-name
+on: [push]
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Print Name
+        run: echo "GitHub Actions Workflow: print-name is running successfully!"
+
